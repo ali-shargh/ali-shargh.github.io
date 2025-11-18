@@ -13,7 +13,7 @@
     <header class="site-header">
       <h1 class="site-title">Ali K. Shargh</h1>
       <p class="site-subtitle">
-        Postdoctoral Research Fellow, Mechanical Engineering, Johns Hopkins University
+        Postdoctoral Research Fellow · Department of Mechanical Engineering · Johns Hopkins University
       </p>
     </header>
 
@@ -24,7 +24,6 @@
         <div class="site-nav-section">
           <div class="site-nav-section-title">Menu</div>
           <ul>
-            <!-- Add class="active" to the current page -->
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="research.html">Research</a></li>
             <li><a href="teaching.html">Teaching</a></li>
@@ -40,32 +39,71 @@
       <main class="main-content">
         <h1>Home</h1>
 
-        <p>
-          Welcome to my academic homepage. I am a postdoctoral research fellow in the
-          Department of Mechanical Engineering at Johns Hopkins University, working with
-          Prof. Jaafar El-Awady.
-        </p>
+        <div class="profile-layout">
+          <!-- LEFT: headshot + contact -->
+          <aside class="profile-left">
+            <div class="profile-photo-wrapper">
+              <!-- 1) Upload your headshot as ali-headshot.jpg to the repo root
+                   2) Or change src to whatever file name you use -->
+              <img src="ali-headshot.jpg" alt="Ali K. Shargh" class="profile-photo">
+            </div>
 
-        <p>
-          Broadly, my research focuses on integrating machine learning with multi-scale
-          computational mechanics to accelerate the discovery of materials for
-          extreme environments, energy, and environmental applications.
-        </p>
+            <div class="profile-contact">
+              <p class="profile-name">Ali K. Shargh</p>
+              <p class="profile-title">
+                Postdoctoral Research Fellow<br>
+                Department of Mechanical Engineering<br>
+                Johns Hopkins University
+              </p>
 
-        <h2>Research interests</h2>
-        <ul>
-          <li>Data-driven design of refractory multi-principal element alloys (RMPEAs)</li>
-          <li>Ice-nucleating proteins and mechanics of ice microstructures</li>
-          <li>Mechanically informed design of nanoporous and membrane materials</li>
-          <li>Machine learning surrogates for large-scale CALPHAD and atomistic simulations</li>
-        </ul>
+              <p class="profile-address">
+                223 Latrobe Hall<br>
+                3400 N. Charles Street<br>
+                Baltimore, MD 21218<br>
+                USA
+              </p>
 
-        <h2>Current position</h2>
-        <p>
-          Postdoctoral Research Fellow<br>
-          Department of Mechanical Engineering<br>
-          Johns Hopkins University, Baltimore, MD, USA
-        </p>
+              <p class="profile-links">
+                Email: <a href="mailto:your_email@jhu.edu">your_email@jhu.edu</a><br>
+                Google Scholar:
+                <a href="https://scholar.google.com/" target="_blank" rel="noopener">link</a><br>
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">link</a>
+              </p>
+            </div>
+          </aside>
+
+          <!-- RIGHT: bio / research overview -->
+          <section class="profile-right">
+            <h2>About</h2>
+            <p>
+              I am a postdoctoral research fellow in the Department of Mechanical Engineering
+              at Johns Hopkins University, working with Prof. Jaafar El-Awady. My work sits at
+              the intersection of computational mechanics, materials science, and machine learning.
+            </p>
+            <p>
+              Broadly, I develop physics-informed, data-driven frameworks to understand how
+              microstructural complexity governs the mechanical behavior of materials and to
+              accelerate the discovery of materials for extreme environments, energy systems,
+              and environmental applications.
+            </p>
+
+            <h2>Research interests</h2>
+            <ul>
+              <li>AI-driven design of refractory multi-principal element alloys (RMPEAs)</li>
+              <li>Ice-nucleating proteins and mechanics of ice microstructures</li>
+              <li>Mechanically informed design of nanoporous and membrane materials</li>
+              <li>Machine learning surrogates for CALPHAD and atomistic simulations</li>
+            </ul>
+
+            <h2>Current position</h2>
+            <p>
+              Postdoctoral Research Fellow<br>
+              Department of Mechanical Engineering<br>
+              Johns Hopkins University, Baltimore, MD, USA
+            </p>
+          </section>
+        </div>
 
       </main>
     </div>
@@ -77,7 +115,6 @@
   </div>
 
   <script>
-    // Simple year auto-update
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
