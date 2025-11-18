@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ali K. Shargh | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <header class="site-header">
+      <h1 class="site-title">Ali K. Shargh</h1>
+      <p class="site-subtitle">
+        Postdoctoral Research Fellow, Mechanical Engineering, Johns Hopkins University
+      </p>
+    </header>
+
+    <div class="layout">
+
+      <!-- Left navigation -->
+      <nav class="site-nav">
+        <div class="site-nav-section">
+          <div class="site-nav-section-title">Menu</div>
+          <ul>
+            <!-- Add class="active" to the current page -->
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="honors.html">Honors</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Main content -->
+      <main class="main-content">
+        <h1>Home</h1>
+
+        <p>
+          Welcome to my academic homepage. I am a postdoctoral research fellow in the
+          Department of Mechanical Engineering at Johns Hopkins University, working with
+          Prof. Jaafar El-Awady.
+        </p>
+
+        <p>
+          Broadly, my research focuses on integrating machine learning with multi-scale
+          computational mechanics to accelerate the discovery of materials for
+          extreme environments, energy, and environmental applications.
+        </p>
+
+        <h2>Research interests</h2>
+        <ul>
+          <li>Data-driven design of refractory multi-principal element alloys (RMPEAs)</li>
+          <li>Ice-nucleating proteins and mechanics of ice microstructures</li>
+          <li>Mechanically informed design of nanoporous and membrane materials</li>
+          <li>Machine learning surrogates for large-scale CALPHAD and atomistic simulations</li>
+        </ul>
+
+        <h2>Current position</h2>
+        <p>
+          Postdoctoral Research Fellow<br>
+          Department of Mechanical Engineering<br>
+          Johns Hopkins University, Baltimore, MD, USA
+        </p>
+
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      © <span id="year"></span> Ali K. Shargh
+    </footer>
+
+  </div>
+
+  <script>
+    // Simple year auto-update
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
