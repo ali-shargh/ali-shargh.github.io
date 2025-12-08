@@ -205,3 +205,8 @@ div.blocktitle { color: #002D72; }
 img { border: none; }
 
 object { width:100%; }
+
+
+#layout-menu a {
+  text-transform: none !important;
+}
